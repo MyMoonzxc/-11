@@ -1,0 +1,21 @@
+
+        double result = f(start);
+        if (result >= 0) 
+        {
+            pl++;
+            sumpl += result;
+        }
+        else 
+        {
+            ot++;
+            sumot += result;
+        }
+        A[i] = result;
+        i++;
+
+        start += step;
+    }
+    printf("Имя массива: A\nНакопленное значение положительных: %.4lf\nНакопленное значение отрицательных: %.4lf\nЧисло положительных: %lf\nЧисло отрицательных: %.4lf\nСреднее значение положительных: %.4lf\n", sumpl, sumot, pl, ot, sumpl / pl);
+
+    system("pause");
+}
